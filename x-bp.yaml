@@ -1,4 +1,4 @@
-name: "deleteme-bp x Basic Example"
+name: "blueprint-feedback x Basic Example"
 schema_version: "1.0.0"
 description: "input output basic"
 inputs:
@@ -15,8 +15,8 @@ modules:
     source:
       source_type: github
       git:
-        # git_repo_url: "https://github.com/powellquiring/deleteme-bp"
-        git_repo_url: "https://github.com/powellquiring/deleteme-bp/tree/master"
+        # git_repo_url: "https://github.com/powellquiring/blueprint-feedback"
+        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master"
         #git_branch: main
     inputs:
       - name: in0

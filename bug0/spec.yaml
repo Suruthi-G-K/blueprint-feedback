@@ -9,4 +9,4 @@ modules:
     source:
       source_type: github
       git:
-        git_repo_url: "https://github.com/powellquiring/deleteme-bp/tree/master/bug0"
+        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/bug0"
