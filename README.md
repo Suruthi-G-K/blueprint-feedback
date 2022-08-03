@@ -1,7 +1,7 @@
 # Examples
 
 ```
-ibmcloud schematics blueprint create -name deleteme-bp-name \
+ibmcloud schematics blueprint create -name deleteme-bp-name2 \
   -resource-group smart \
   -bp-git-url https://github.com/powellquiring/deleteme-bp \
   -bp-git-branch master \
