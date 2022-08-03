@@ -1,0 +1,12 @@
+name: "bug0-spec"
+schema_version: "1.0.0"
+settings:
+  - name: TF_VERSION
+    value: 1.0
+modules:
+  - name: bug0
+    module_type: terraform
+    source:
+      source_type: github
+      git:
+        git_repo_url: "https://github.com/powellquiring/deleteme-bp/tree/master/bug0"
