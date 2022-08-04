@@ -12,7 +12,8 @@ modules:
       source_type: github
       git:
         #git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master"
-        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/bug0"
+        #git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/bug0"
+        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/bug0/layer0"
     inputs:
       - name: in0
         value: $blueprint.hello_in
