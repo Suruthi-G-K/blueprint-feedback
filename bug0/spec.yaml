@@ -1,5 +1,7 @@
 name: "bug0-spec"
 schema_version: "1.0.0"
+inputs:
+  - name: hello_in
 settings:
   - name: TF_VERSION
     value: 1.0
@@ -10,3 +12,6 @@ modules:
       source_type: github
       git:
         git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master"
+    inputs:
+      - name: in0
+        value: $blueprint.hello_in
