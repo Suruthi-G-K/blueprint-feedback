@@ -2,11 +2,14 @@ name: "bug0-spec"
 schema_version: "1.0.0"
 inputs:
   - name: hello_in
+outputs:
+  - name: hello_out
+    value: $module.layer0.outputs.out0
 settings:
   - name: TF_VERSION
     value: 1.0
 modules:
-  - name: bug0
+  - name: layer0
     module_type: terraform
     source:
       source_type: github
@@ -17,3 +20,5 @@ modules:
     inputs:
       - name: in0
         value: $blueprint.hello_in
+    outputs:
+      - name: out0
