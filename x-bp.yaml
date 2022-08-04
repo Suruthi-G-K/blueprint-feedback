@@ -15,9 +15,7 @@ modules:
     source:
       source_type: github
       git:
-        # git_repo_url: "https://github.com/powellquiring/blueprint-feedback"
         git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master"
-        #git_branch: main
     inputs:
       - name: in0
         value: $blueprint.hello_in
