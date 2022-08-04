@@ -10,7 +10,7 @@ outputs:
     value: $module.layer1.outputs.out0
 settings:
   - name: TF_VERSION
-    value: 1.0
+    value: 1.1
 modules:
   - name: layer0
     module_type: terraform
