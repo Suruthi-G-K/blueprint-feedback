@@ -8,5 +8,5 @@ output "resource_group_id" {
   value = var.resource_group_id
 }
 output "vpc_id" {
-  value = "ibm_is_vpc.cloud.id"
+  value = ibm_is_vpc.cloud.id
 }
