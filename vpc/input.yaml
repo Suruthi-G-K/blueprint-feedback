@@ -1,1 +1,3 @@
 basename: blueprint00
+region: us-south
+resource_group_name: smart
