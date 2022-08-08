@@ -7,9 +7,11 @@ inputs:
   - name: resource_group_name
 outputs:
   - name: basename
-    value: $module.layer0.outputs.basename
-  - name: out
-    value: $module.layer1.outputs.out0
+    value: $module.layer1.outputs.basename
+  - name: vpc_id
+    value: $module.layer1.outputs.vpc_id
+  - name: resource_group_id
+    value: $module.layer1.outputs.resource_group_id
 settings:
   - name: TF_VERSION
     value: 1.1
