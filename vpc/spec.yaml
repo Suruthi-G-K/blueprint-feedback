@@ -6,7 +6,7 @@ inputs:
 outputs:
   - name: prefix
     value: $module.layer0.outputs.prefix
-  - name: prefix
+  - name: out
     value: $module.layer1.outputs.out0
 settings:
   - name: TF_VERSION
@@ -31,6 +31,6 @@ modules:
         git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/vpc/layer1"
     inputs:
       - name: prefix
-        value: $module.layer0.outputs.out0
+        value: $module.layer0.outputs.prefix
     outputs:
       - name: out0
