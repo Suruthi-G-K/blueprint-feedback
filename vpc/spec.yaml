@@ -2,10 +2,12 @@ name: "blueprint-feedback x Basic Example"
 schema_version: "1.0.0"
 description: "input output basic"
 inputs:
-  - name: prefix
+  - name: basename
+  - name: region
+  - name: resource_group_name
 outputs:
-  - name: prefix
-    value: $module.layer0.outputs.prefix
+  - name: basename
+    value: $module.layer0.outputs.basename
   - name: out
     value: $module.layer1.outputs.out0
 settings:
@@ -19,10 +21,16 @@ modules:
       git:
         git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/vpc/layer0"
     inputs:
-      - name: prefix
-        value: $blueprint.prefix
+      - name: basename
+        value: $blueprint.basename
+      - name: region
+        value: $blueprint.region
+      - name: resource_group_name
+        value: $blueprint.resource_group_name
     outputs:
-      - name: prefix
+      - name: basename
+      - name: region
+      - name: resource_group_id
   - name: layer1
     module_type: terraform
     source:
@@ -30,7 +38,14 @@ modules:
       git:
         git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/vpc/layer1"
     inputs:
-      - name: prefix
-        value: $module.layer0.outputs.prefix
+      - name: basename
+        value: $module.layer0.outputs.basename
+      - name: region
+        value: $module.layer0.outputs.region
+      - name: resource_group_id
+        value: $module.layer0.outputs.resource_group_id
     outputs:
-      - name: out0
+      - name: basename
+      - name: region
+      - name: resource_group_id
+      - name: vpc_id

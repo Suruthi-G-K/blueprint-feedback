@@ -1,9 +1,6 @@
-terraform {
-  required_version = ">=0.13"
+provider "ibm" {
 }
 
-variable prefix {}
-
-output prefix {
-  value = var.prefix
+data "ibm_resource_group" "base" {
+  name = var.resource_group_name
 }
