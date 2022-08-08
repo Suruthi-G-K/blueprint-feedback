@@ -4,6 +4,6 @@ terraform {
 
 variable in0 {}
 
-output out0 {
+output prefix {
   value = "hello-bug0/layer0-${var.in0}"
 }
