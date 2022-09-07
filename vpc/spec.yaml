@@ -1,4 +1,5 @@
 name: "blueprint-feedback x Basic Example"
+type: blueprint
 schema_version: "1.0.0"
 description: "input output basic"
 inputs:
