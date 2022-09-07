@@ -22,7 +22,7 @@ modules:
     source:
       source_type: github
       git:
-        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/vpc/layer0"
+        git_repo_url: "https://github.com/Suruthi-G-K/blueprint-feedback/tree/master/vpc/layer0"
     inputs:
       - name: basename
         value: $blueprint.basename
@@ -39,7 +39,7 @@ modules:
     source:
       source_type: github
       git:
-        git_repo_url: "https://github.com/powellquiring/blueprint-feedback/tree/master/vpc/layer1"
+        git_repo_url: "https://github.com/Suruthi-G-K/blueprint-feedback/tree/master/vpc/layer1"
     inputs:
       - name: basename
         value: $module.layer0.outputs.basename
